@@ -51,6 +51,10 @@ apt-get update && apt-get install -q -y --no-install-recommends \
   ros-noetic-ecl-streams\
   ros-noetic-diagnostic-aggregator\
   ros-noetic-realsense2-camera\
+  ros-noetic-pcl-conversions\
+  ros-noetic-pcl-ros\
+  ros-noetic-dynamixel-sdk\
+  ros-noetic-joy\
   && rm -rf /var/lib/apt/lists/*
 pip3 install "git+https://github.com/catkin/catkin_tools.git#egg=catkin_tools"
 

@@ -8,6 +8,7 @@ source /root/locobot_ws/devel/setup.bash
 source /root/.bashrc
 cd workspace/
 pip install -e /workspace/pyrobot
+pip install torchvision
 
 eval "bash"
 

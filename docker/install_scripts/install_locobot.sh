@@ -15,7 +15,7 @@ git clone https://github.com/turtlebot/turtlebot_interactions.git
 git clone https://github.com/turtlebot/turtlebot_simulator.git
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-git clone https://github.com/AutonomyLab/create_robot.git
+git clone https://github.com/AutonomyLab/create_autonomy.git
 git clone https://github.com/Improbable-AI/pyrobot.git
 cd ..
 rosdep update

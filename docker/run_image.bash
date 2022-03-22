@@ -1,4 +1,4 @@
-IMAGE=ros:noetic-ros-core-focal
+IMAGE=ros:noetic-ros-core-focal-improbableai
 docker run -it\
     --env="DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \

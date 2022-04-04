@@ -78,10 +78,9 @@ class SimpleCamera(Camera):
         self.sync.registerCallback(self._sync_callback)
         depth_threshold = (self.configs.BASE.VSLAM.DEPTH_MIN,
                            self.configs.BASE.VSLAM.DEPTH_MAX)
-        cfg_filename = self.configs.BASE.VSLAM.CFG_FILENAME
         self.depth_cam = DepthImgProcessor(subsample_pixs=1,
-                                           depth_threshold=depth_threshold,
-                                           cfg_filename=cfg_filename)
+                                           configs = self.configs,
+                                           depth_threshold=depth_threshold)
         self.cam_cf = self.configs.BASE.VSLAM.RGB_CAMERA_CENTER_FRAME
         self.base_f = self.configs.BASE.VSLAM.VSLAM_BASE_FRAME
 
@@ -437,8 +436,7 @@ class DepthImgProcessor:
     This class transforms the depth image and rgb image to point cloud
     """
 
-    def __init__(self, subsample_pixs=1, depth_threshold=(0, 1.5),
-                 cfg_filename='realsense_d435.yaml'):
+    def __init__(self, configs, subsample_pixs=1, depth_threshold=(0, 1.5)):
         """
         The constructor for :class:`DepthImgProcessor` class.
 
@@ -457,6 +455,7 @@ class DepthImgProcessor:
         self.depth_threshold = depth_threshold
         self.intrinsic_mat = self.get_intrinsic()
         self.intrinsic_mat_inv = np.linalg.inv(self.intrinsic_mat)
+        self.configs = configs
 
         img_pixs = np.mgrid[0: self.configs.CAMERA.HEIGHT: subsample_pixs,
                    0: self.configs.CAMERA.WIDTH: subsample_pixs]

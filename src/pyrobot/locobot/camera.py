@@ -451,11 +451,12 @@ class DepthImgProcessor:
         assert (type(depth_threshold) is tuple and
                 0 < len(depth_threshold) < 3) or \
                (depth_threshold is None)
+        self.configs = configs
         self.subsample_pixs = subsample_pixs
         self.depth_threshold = depth_threshold
         self.intrinsic_mat = self.get_intrinsic()
         self.intrinsic_mat_inv = np.linalg.inv(self.intrinsic_mat)
-        self.configs = configs
+        
 
         img_pixs = np.mgrid[0: self.configs.CAMERA.HEIGHT: subsample_pixs,
                    0: self.configs.CAMERA.WIDTH: subsample_pixs]

@@ -184,7 +184,7 @@ class Kinematics(object):
                                           idx)
 
         if fg < 0:
-             rospy.logerr('Forward Kinenatics: KDL Pos JntToCart error!')
+            rospy.logerr('Forward Kinenatics: KDL Pos JntToCart error!')
             resp.success = False
             return resp
 

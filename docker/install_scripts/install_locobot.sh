@@ -15,10 +15,12 @@ git clone https://github.com/turtlebot/turtlebot_interactions.git
 git clone https://github.com/turtlebot/turtlebot_simulator.git
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-git clone https://github.com/AutonomyLab/create_robot.git
-git clone https://github.com/Improbable-AI/pyrobot.git
+git clone --branch remove-orb2-slam https://github.com/Improbable-AI/pyrobot.git
+git clone --branch indigo-devel https://github.com/AutonomyLab/create_autonomy.git
+
 cd ..
 rosdep update
 apt-get update
-rosdep install --from-paths src/create_robot src/dynamixel-workbench src/dynamixel-workbench-msgs src/ar_track_alvar -i -y
+rosdep install --from-paths src/create_autonomy src/dynamixel-workbench src/dynamixel-workbench-msgs src/ar_track_alvar -i -y
 catkin build
+

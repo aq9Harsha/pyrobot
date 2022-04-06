@@ -6,8 +6,12 @@ source /opt/ros/noetic/setup.bash
 source /root/create_ws/devel/setup.bash
 source /root/locobot_ws/devel/setup.bash
 source /root/.bashrc
-cd workspace/
-pip install -e /workspace/pyrobot
+cd /root/locobot_ws/src/pyrobot
+pip install .
+cd /workspace/
+
+pip install torchvision
+
 
 eval "bash"
 

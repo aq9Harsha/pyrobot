@@ -18,6 +18,7 @@ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 git clone --branch remove-orb2-slam https://github.com/Improbable-AI/pyrobot.git
 git clone --branch indigo-devel https://github.com/AutonomyLab/create_autonomy.git
 
+
 cd ..
 rosdep update
 apt-get update

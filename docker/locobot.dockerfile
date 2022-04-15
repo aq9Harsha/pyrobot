@@ -79,7 +79,7 @@ COPY install_scripts/install_py_pkgs2.sh /tmp/install_py_pkgs2.sh
 RUN chmod +x /tmp/install_py_pkgs2.sh
 RUN /tmp/install_py_pkgs2.sh
 
-
+COPY calibrated.json /root/.robot/calibrated.json
 
 RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc
 RUN echo "source /root/create_ws/devel/setup.bash" >> /root/.bashrc

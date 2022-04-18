@@ -31,6 +31,8 @@
             <group if="$(arg use_camera)">
                   <include file="$(find orb_slam2_ros)/launch/orb_slam2_realsense.launch">
                       <arg name="launch_realsense" value="false"/>
+                      <arg name="camera" value="camera"/>
+                      <arg name="serial_no" value="908212070730"/>
                   </include>
             </group>
             <group unless="$(arg use_camera)">

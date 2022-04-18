@@ -1,0 +1,10 @@
+<launch>
+    <arg name="third_person_cam" default="camera2"/>
+    <arg name="third_person_serial_no" default="908212070730"/>
+
+    <include file="$(find realsense2_camera)/launch/rs_rgbd.launch">
+        <arg name="enable_pointcloud" value="false"/>
+        <arg name="camera" value="$(arg third_person_cam)"/>
+        <arg name="serial_no" value="$(arg third_person_serial_no)"/>
+    </include>
+</launch>

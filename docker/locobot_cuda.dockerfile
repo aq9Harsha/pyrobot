@@ -53,9 +53,9 @@ ENV CATKIN_WS=/root/catkin_ws
 RUN source /opt/ros/$ROS_DISTRO/setup.bash
 
 
-COPY ./install_scripts/install_pytorch.sh /tmp/install_pytorch.sh
-RUN chmod +x /tmp/install_pytorch.sh
-RUN /tmp/install_pytorch.sh
+COPY ./install_scripts/install_pytorch_cuda.sh /tmp/install_pytorch_cuda.sh
+RUN chmod +x /tmp/install_pytorch_cuda.sh
+RUN /tmp/install_pytorch_cuda.sh
 
 # copy local requirements file for pip install python deps
 ENV IMPROB /workspace

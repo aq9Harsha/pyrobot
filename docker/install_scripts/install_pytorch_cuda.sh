@@ -6,5 +6,5 @@ apt-get update
 
 rm -rf /var/lib/apt/lists/*
 
-# install pytorch
-pip3 install torch torchvision torchaudio
+# install pytotorch
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113

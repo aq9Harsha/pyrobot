@@ -5,6 +5,9 @@ docker run -it\
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --volume="$PWD/../../:/workspace/" \
     -v /dev:/dev \
+    --gpus all \
+    -e NVIDIA_DRIVER_CAPABILITIES=all \
+    -e NVIDIA_VISIBLE_DEVICES=all \
     --privileged \
     --net=host \
     ${IMAGE}

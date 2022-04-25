@@ -155,6 +155,7 @@ thirdparty/ORB_SLAM2/Vocabulary/ORBvoc.txt
 
 # tmp files for testing
 tmp/*
-
+*.swo
+*.swp
 # docusaurus
 node_modules

@@ -15,7 +15,7 @@ git clone https://github.com/turtlebot/turtlebot_interactions.git
 git clone https://github.com/turtlebot/turtlebot_simulator.git
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-git clone --branch remove-orb2-slam https://github.com/Improbable-AI/pyrobot.git
+git clone --branch new-realsense https://github.com/Improbable-AI/pyrobot.git
 git clone --branch indigo-devel https://github.com/AutonomyLab/create_autonomy.git
 git clone https://github.com/Improbable-AI/airobot.git
 

@@ -22,7 +22,7 @@ def execute_build(args):
     # copy requirements file from parent into docker folder
 
     cmd = 'DOCKER_BUILDKIT=1 docker build '
-    cmd += '--ssh default '
+    #cmd += '--ssh default '
     cmd += '--network=host '
     if args.no_cache:
         cmd += '--no-cache '

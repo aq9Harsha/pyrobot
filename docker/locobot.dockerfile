@@ -84,7 +84,7 @@ COPY calibrated.json /root/.robot/calibrated.json
 RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc
 RUN echo "source /root/create_ws/devel/setup.bash" >> /root/.bashrc
 RUN echo "source /root/locobot_ws/devel/setup.bash" >> /root/.bashrc
-RUN echo "export ROS_IP=192.168.50.19" >> /root/.bashrc
+RUN echo "export ROS_IP=192.168.50.117" >> /root/.bashrc
 RUN echo "export ROS_MASTER_URI=http://192.168.50.117:11311" >> /root/.bashrc
 
 

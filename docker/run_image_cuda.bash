@@ -1,4 +1,4 @@
-IMAGE=ros:noetic-ros-core-focal-cuda
+IMAGE=ros:noetic-ros-core-focal-cuda-415
 docker run -it\
     --env="DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \

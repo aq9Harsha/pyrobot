@@ -35,7 +35,7 @@ def execute_build(args):
 
 
 if __name__ == '__main__':
-    default_image_name = "ros:noetic-ros-core-focal-cuda"
+    default_image_name = "ros:noetic-ros-core-focal-cuda-415"
 
     parser = argparse.ArgumentParser()
 

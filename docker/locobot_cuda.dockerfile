@@ -85,7 +85,7 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc
 RUN echo "source /root/create_ws/devel/setup.bash" >> /root/.bashrc
 RUN echo "source /root/locobot_ws/devel/setup.bash" >> /root/.bashrc
 RUN echo "export ROS_MASTER_URI=http://192.168.50.117:11311" >> /root/.bashrc
-RUN echo "export ROS_IP=192.168.50.110" >> /root/.bashrc
+RUN echo "export ROS_IP=192.168.50.111" >> /root/.bashrc
 
 
 WORKDIR /

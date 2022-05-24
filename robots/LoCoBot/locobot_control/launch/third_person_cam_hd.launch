@@ -6,5 +6,8 @@
         <arg name="enable_pointcloud" value="false"/>
         <arg name="camera" value="$(arg third_person_cam)"/>
         <arg name="serial_no" value="$(arg third_person_serial_no)"/>
+        <arg name="color_width" value="1280" />
+        <arg name="color_height" value="720" />
+        <arg name="color_fps" value="30" />
     </include>
 </launch>

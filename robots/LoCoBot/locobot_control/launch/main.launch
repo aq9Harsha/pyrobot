@@ -24,8 +24,7 @@
         <group if="$(arg use_camera)">
             <include file="$(find realsense2_camera)/launch/rs_rgbd.launch">
                 <arg name="enable_pointcloud" value="false"/>
-                <arg name="auto_exposure" value ="false"/>
-                <arg name="post_processing" value="false"/>
+                <arg name="rgb_processing" value ="false"/>
             </include>
         </group>
 

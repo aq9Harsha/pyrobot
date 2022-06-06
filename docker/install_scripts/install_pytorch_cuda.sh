@@ -8,3 +8,4 @@ rm -rf /var/lib/apt/lists/*
 pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
 pip install tensorboard
 pip install wandb
+pip install seaborn

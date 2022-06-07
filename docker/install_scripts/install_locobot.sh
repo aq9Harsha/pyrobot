@@ -19,7 +19,6 @@ git clone --branch new-realsense https://github.com/Improbable-AI/pyrobot.git
 git clone --branch indigo-devel https://github.com/AutonomyLab/create_autonomy.git
 git clone https://github.com/Improbable-AI/airobot.git
 
-
 cd ..
 rosdep update
 apt-get update
